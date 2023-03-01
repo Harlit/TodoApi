@@ -8,8 +8,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace TodoApi.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("/")]
     public class OcupacionesControladores : ControllerBase
     {
         private readonly Context _context;
