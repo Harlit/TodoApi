@@ -16,7 +16,7 @@ namespace TodoApi.Migrations
                 {
                     OcupacionId = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Descripcion = table.Column<string>(type: "TEXT", nullable: false),
+                    Descripcion = table.Column<string>(type: "TEXT", nullable: true),
                     Salario = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>

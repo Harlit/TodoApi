@@ -22,7 +22,6 @@ namespace TodoApi.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Descripcion")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<int>("Salario")

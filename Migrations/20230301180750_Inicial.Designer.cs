@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace TodoApi.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230301172206_Inicial")]
+    [Migration("20230301180750_Inicial")]
     partial class Inicial
     {
         /// <inheritdoc />
@@ -25,7 +25,6 @@ namespace TodoApi.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Descripcion")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<int>("Salario")
