@@ -91,8 +91,8 @@ namespace TodoApi.Controllers
             _context.Ocupaciones.Add(ocupaciones);
             await _context.SaveChangesAsync();
 
-            // return CreatedAtAction("GetOcupaciones", new { id = ocupaciones.OcupacionId }, ocupaciones);
-            return CreatedAtAction(nameof(GetOcupaciones), new { id = ocupaciones.OcupacionId }, ocupaciones);
+            return CreatedAtAction("GetOcupaciones", new { id = ocupaciones.OcupacionId }, ocupaciones);
+            //return CreatedAtAction(nameof(GetOcupaciones), new { id = ocupaciones.OcupacionId }, ocupaciones);
         }
 
         // DELETE: api/OcupacionesControladores/5
